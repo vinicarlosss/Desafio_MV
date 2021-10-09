@@ -72,6 +72,19 @@ body{
     height: 25vh;
 }
 
+.main-card-crudTwo{
+    background: white;
+    border: solid;
+    width: 40vw;
+    height: 35vh;
+}
+
+.main-card-crudTwo header{
+    height: 4vh;
+    background: #ebeaea;
+    text-align: center;
+}
+
 .main-card-crud header{
     height: 4vh;
     background: #ebeaea;
@@ -86,14 +99,14 @@ body{
     margin: 30px;
 }
 
-.main-card-crud .lineTwo{
+.main-card-crudTwo .lineTwo{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px;
 }
 
-.main-card-crud .lineTwo a{
+.main-card-crudTwo .lineTwo a{
     margin-left: 10px;
 }
 

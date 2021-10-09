@@ -26,7 +26,7 @@ connection.connect(function(error){
 //Métodos para integração
 
 router.post('/colaborador-add', (req,res) => {
-    let {Nome, Cpf, Comida}= req.body;
+    let {Nome, Cpf}= req.body;
     connection.query(`INSERT INTO colaborador(nome, cpf) VALUES ('${Nome}', '${Cpf}');`,
     (error, rows) => {
         if(!!error){
@@ -35,7 +35,11 @@ router.post('/colaborador-add', (req,res) => {
             res.send(rows);
         }
     })
-    connection.query(`INSERT INTO alimento (comida, cpf) VALUES ('${Comida}', '${Cpf}')`,
+})
+
+router.post('/comida-add', (req,res) => {
+    let {Cpf, Comida}= req.body;
+    connection.query(`INSERT INTO alimento(cpf, comida) VALUES ('${Cpf}', '${Comida}');`,
     (error, rows) => {
         if(!!error){
             res.send(error);
@@ -44,5 +48,55 @@ router.post('/colaborador-add', (req,res) => {
         }
     })
 })
+
+router.post('/comida-att', (req,res) => {
+    let {Cpf, Comida}= req.body;
+    connection.query(`UPDATE alimento SET cpf = '${Cpf}', comida = '${Comida}'  WHERE cpf = '${Cpf}';`,
+    (error, rows) => {
+        if(!!error){
+            res.send(error);
+        }else{
+            res.send(rows);
+        }
+    })
+})
+
+router.post('/colaborador-att', (req,res) => {
+    let {Nome, Cpf}= req.body;
+    connection.query(`UPDATE colaborador SET nome = '${Nome}', cpf = '${Cpf}'  WHERE cpf = '${Cpf}';`,
+    (error, rows) => {
+        if(!!error){
+            res.send(error);
+        }else{
+            res.send(rows);
+        }
+    })
+})
+
+router.delete('/delete-colaborador', (req,res) =>{
+    let {Cpf} = req.body;
+    connection.query(`DELETE FROM colaborador WHERE cpf = '${Cpf}';`,
+    (error, rows) => {
+        if(!!error){
+            res.send(error);
+        }else{
+            res.send(rows);
+        }
+    })
+})
+
+router.delete('/delete-comida', (req,res) =>{
+    let {Cpf} = req.body;
+    connection.query(`DELETE FROM alimento WHERE cpf = '${Cpf}';`,
+    (error, rows) => {
+        if(!!error){
+            res.send(error);
+        }else{
+            res.send(rows);
+        }
+    })
+})
+
+
 
 module.exports = router;

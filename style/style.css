@@ -67,14 +67,14 @@ body{
 
 .main-card-crud{
     background: white;
-    border: solid;
     width: 40vw;
     height: 25vh;
 }
 
 .main-card-crudTwo{
+    position: absolute;
+    top: 45%;
     background: white;
-    border: solid;
     width: 40vw;
     height: 35vh;
 }
@@ -106,7 +106,7 @@ body{
     margin: 30px;
 }
 
-.main-card-crudTwo .lineTwo a{
+.main-card-crudTwo .lineTwo .entrada{
     margin-left: 10px;
 }
 

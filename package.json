@@ -1,16 +1,23 @@
 {
-  "name": "desafio-mv",
+  "name": "desafio_mv",
   "version": "1.0.0",
-  "description": "Desafio MV, projeto criado para seleção de uma vaga na MV",
+  "description": "Projeto consiste em uma aplicação web, feita com as ferramentas de desenvolvimento web tradicionais e o backend em node.js. O projeto deve pedir o informações do colaborador e informações sobre um café da manhã feito na empresa, após isso os dados devem ser encaminhados para o banco de dados. O projeto servirá como processo seletivo para a vaga pessoa desenvolvedora full stack - projeto cubo MV.\r Algumas imagens do projeto a seguir: \r <img src=\"./assets/image/imagem1.png\">\r <img src=\"./assets/image/imagem2.png\">\r <img src=\"./assets/image/imagem3.png\">",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vinicarlosss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinicarlosss/Desafio_MV.git"
+  },
+  "author": "vinicarlosss",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinicarlosss/Desafio_MV/issues"
+  },
+  "homepage": "https://github.com/vinicarlosss/Desafio_MV#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mysql2": "^2.3.0"
   }

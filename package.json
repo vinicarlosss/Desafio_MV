@@ -2,9 +2,10 @@
   "name": "desafio_mv",
   "version": "1.0.0",
   "description": "Projeto consiste em uma aplicação web, feita com as ferramentas de desenvolvimento web tradicionais e o backend em node.js. O projeto deve pedir o informações do colaborador e informações sobre um café da manhã feito na empresa, após isso os dados devem ser encaminhados para o banco de dados. O projeto servirá como processo seletivo para a vaga pessoa desenvolvedora full stack - projeto cubo MV.\r Algumas imagens do projeto a seguir: \r <img src=\"./assets/image/imagem1.png\">\r <img src=\"./assets/image/imagem2.png\">\r <img src=\"./assets/image/imagem3.png\">",
-  "main": "index.js",
+  "main": "./js/api/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./"
   },
   "repository": {
     "type": "git",

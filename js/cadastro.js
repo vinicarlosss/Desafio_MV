@@ -15,7 +15,7 @@ let validaForm = () =>{
         Msg.style.display = "block";
         campoNome.value = "";
         campoCpf.value = "";
-        campoComida. value = "";
+        campoComida.value = "";
     };
 
 

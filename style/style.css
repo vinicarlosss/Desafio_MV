@@ -97,3 +97,7 @@ body{
     margin-left: 10px;
 }
 
+.alert{
+    margin: 5px;
+    display: none;
+}

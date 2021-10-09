@@ -97,6 +97,17 @@ router.delete('/delete-comida', (req,res) =>{
     })
 })
 
+router.get('/breakfest-list', (req,res) => {
+    connection.query(`SELECT U.nome, F.cpf, F.comida FROM (colaborador as U, alimento as F) WHERE F.cpf = U.cpf;`,
+    (error,rows) => {
+        if(!!error){
+            res.send(error);
+        }else{
+            res.send(rows);
+        }
+    });
+});
+
 
 
 module.exports = router;

@@ -110,3 +110,5 @@ let deleteColaborador = () => {
         .catch(error => console.log(error))
     deleteComida();
 }
+
+

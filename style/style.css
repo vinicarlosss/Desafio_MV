@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    background: #00ACEA ;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-mv{
+    width: 500px;
+    height: 500px;
+}
+
+.nuvem-img{
+    width: 256px;
+    height: 256px;
+}
+
+#nuvem-left{
+    position: absolute;
+    top: 70%;
+    animation: mexeNuvemLeft 60s infinite;
+}
+
+#nuvem-right {
+    position: absolute;
+    top: 0%;
+    animation: mexeNuvemRight 60s infinite;
+}
+
+@keyframes mexeNuvemLeft {
+    0%{
+        left: -20%
+    }
+    50%{
+        left: 80%
+    }
+    100%{
+        left:120%
+    }
+}
+
+@keyframes mexeNuvemRight {
+    0%{
+        right: -20%
+    }
+    50%{
+        right: 80%
+    }
+    100%{
+        right:120%
+    }
+}
+
+.main-card-crud{
+    background: white;
+    border: solid;
+    width: 40vw;
+    height: 25vh;
+}
+
+.main-card-crud header{
+    height: 4vh;
+    background: #ebeaea;
+    text-align: center;
+}
+
+.main-card-crud .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "desafio-mv",
+  "version": "1.0.0",
+  "description": "Desafio MV, projeto criado para seleção de uma vaga na MV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinicarlosss",
+  "license": "MIT"
+}

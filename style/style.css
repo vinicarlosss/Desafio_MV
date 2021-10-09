@@ -80,7 +80,20 @@ body{
 
 .main-card-crud .line{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 30px;
 }
+
+.main-card-crud .lineTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.main-card-crud .lineTwo a{
+    margin-left: 10px;
+}
+

@@ -31,14 +31,14 @@ body{
 
 #nuvem-left{
     position: absolute;
-    top: 70%;
-    animation: mexeNuvemLeft 60s infinite;
+    top: 75%;
+    animation: mexeNuvemLeft 90s infinite;
 }
 
 #nuvem-right {
     position: absolute;
     top: 0%;
-    animation: mexeNuvemRight 60s infinite;
+    animation: mexeNuvemRight 90s infinite;
 }
 
 @keyframes mexeNuvemLeft {
@@ -82,5 +82,5 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px;
 }
